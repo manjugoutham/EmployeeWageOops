@@ -135,7 +135,12 @@ public class EmployeeUC
 	public static void main(String[] args) 
 	{
 		// TODO Auto-generated method stub
-		EmpCalMon();
+		//EmployeeUC()
+				//Empcalwage();
+				//EmpPartTime();
+				//EmpSwitchcase();
+				//EmpCalMon();
+				CalWagetotaluc6();
 		
 		
 	}

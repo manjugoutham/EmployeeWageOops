@@ -81,10 +81,48 @@ public class EmployeeUC
 		System.out.println("The part time total amount is :  "+totalpartval);
 	}
 	
+	public static void EmpSwitchcase() {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter the employee name :");
+		name = sc.next();
+		System.out.print("Enter the days :");
+		days = sc.nextInt();
+
+		System.out.println("The Employee name is : " + name);
+		for (int i = 0; i <= days; i++) {
+			int Empcheck = (int) Math.floor(Math.random() * 10) % 3;
+
+			switch (Empcheck) {
+			case 0:
+				ab++;
+				break;
+			case 1:
+				pr++;
+				break;
+			case 2:
+				part_time_days1++;
+
+			}
+		}
+//		int empwage = emphrs * rate ;
+//		System.out.println("The empwage is: "+empwage);
+
+		int empwage = rate * emphrs * pr;
+		int partwage = rate * part_time_days1 * part_time;
+		int abwage = rate * emphrs * ab;
+		System.out.println(pr);
+		System.out.println(ab);
+		System.out.println(part_time_days1);
+		System.out.println("The present wage day amount is :" + empwage);
+		System.out.println("The absent days is amount is : " + abwage);
+		System.out.println("The part time days wage amount is : " + partwage);
+
+	}
 	public static void main(String[] args) 
 	{
 		// TODO Auto-generated method stub
-		EmpPartTime();
+		EmpSwitchcase();
 		
 		
 	}

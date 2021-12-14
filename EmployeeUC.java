@@ -119,10 +119,15 @@ public class EmployeeUC
 		System.out.println("The part time days wage amount is : " + partwage);
 
 	}
+	
+	public static void EmpCalMon() 
+	{
+		EmpSwitchcase();
+	}
 	public static void main(String[] args) 
 	{
 		// TODO Auto-generated method stub
-		EmpSwitchcase();
+		EmpCalMon();
 		
 		
 	}

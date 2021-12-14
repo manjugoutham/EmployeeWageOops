@@ -54,10 +54,37 @@ public class EmployeeUC
 		System.out.println("The absent empcalwage amount is :  "+Abwage);
 	}
 	
+	public static void EmpPartTime()
+	{
+//		int part_time =4;
+		
+		Empcalwage();
+		for (int i = 0; i <= days; i++) {
+			double rand = Math.floor(Math.random() * 10 % 3);
+			if (rand == 1) 
+			{
+				pr++;
+			} else if (rand == 0) 
+			{
+				ab++;
+			} else if (rand == 2) 
+			{
+				prt_time_days++;
+			}  
+			else {
+				break;
+			}
+		}
+		
+		System.out.println("Employee part time hrs " + prt_time_days);
+		int totalpartval = rate * part_time * prt_time_days;
+		System.out.println("The part time total amount is :  "+totalpartval);
+	}
+	
 	public static void main(String[] args) 
 	{
 		// TODO Auto-generated method stub
-		Empcalwage();
+		EmpPartTime();
 		
 		
 	}

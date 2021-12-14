@@ -124,6 +124,14 @@ public class EmployeeUC
 	{
 		EmpSwitchcase();
 	}
+	
+	public static void CalWagetotaluc6() {
+
+		EmpCalMon();
+		int totaldays=(Fixed_hrs*pr)+(part_time*part_time_days1);
+		System.out.println("the total days value "+totaldays);
+	}
+
 	public static void main(String[] args) 
 	{
 		// TODO Auto-generated method stub

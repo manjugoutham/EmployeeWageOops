@@ -45,11 +45,19 @@ public class EmployeeUC
 		System.out.println("Employee is abscent days for " + ab);
 	}
 	
+	public static void Empcalwage() 
+	{
+		EmployeeUC();
+		int Prwage = rate * emphrs * pr;
+		int Abwage = rate * emphrs * ab; 
+		System.out.println("The present empcalwage amount is :  "+Prwage);
+		System.out.println("The absent empcalwage amount is :  "+Abwage);
+	}
 	
 	public static void main(String[] args) 
 	{
 		// TODO Auto-generated method stub
-		EmployeeUC();
+		Empcalwage();
 		
 		
 	}
